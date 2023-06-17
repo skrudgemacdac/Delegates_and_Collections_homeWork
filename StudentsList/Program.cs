@@ -80,7 +80,7 @@ class Program
         {
             if (student.age >= 18 && student.age <= 20)
             {
-                ageFrequency[student.course]++;
+                ageFrequency[student.age]++;
             }
         }
 
@@ -104,7 +104,7 @@ class Program
         Console.WriteLine("Список студентов, отсортированный по курсу и возрасту:");
         foreach (var student in list)
         {
-            Console.WriteLine(student.firstName + " " + student.lastName + " - Возраст: " + student.course + ", Курс: " + student.age);
+            Console.WriteLine(student.firstName + " " + student.lastName + " Возраст: " + student.age + ", Курс: " + student.course);
         }
 
         Console.WriteLine(DateTime.Now - dt);
